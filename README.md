@@ -10,6 +10,7 @@ An online E-store system built in github.io .. etc. <_replace with other platfor
 - Zorin Makabenta
 - Hudsen Mickley
 - Willow Thompson
+- Tess Hacker
 
 
 ## Prerequisites  <_add anything else that applies_>
