@@ -43,4 +43,4 @@ If any shortcomings, make clear what these are and where they are located.
 
 <_replace with the type of license you will use for the project_> e.g. MIT License
 
-See LICENSE for details.
+Commercial or Proprietary License
