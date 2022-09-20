@@ -9,7 +9,7 @@ An online E-store system built in github.io .. etc. <_replace with other platfor
 - Marigold Parson
 - Zorin Makabenta
 - Hudsen Mickley
-- MEMBER04
+- Willow Thompson
 
 
 ## Prerequisites  <_add anything else that applies_>
