@@ -8,7 +8,7 @@ An online E-store system built in github.io .. etc. <_replace with other platfor
 <_each team member clones repo and then edits/replace with their name below_>
 - Marigold Parson
 - Zorin Makabenta
-- MEMBER03
+- Hudsen Mickley
 - MEMBER04
 
 
