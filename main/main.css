@@ -1,0 +1,36 @@
+:root {
+	--background: url('/main/mosiac.png');
+	/* --color-primary: #;
+	--color-selected: #;
+	--color-highlight: #;
+	--font-color: #;
+	--font-color-2: #;
+	--input-background: #;
+	--input-background-selected: #; */
+	--darkened-backdrop-filter: grayscale(1) brightness(0.3);
+}
+
+ /* body {
+    position: fixed;
+	z-index: -1;
+	width: 100vw;
+	height: 100vh;
+	background-image: var(--background);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center center;
+	/* filter: var(--regular-backdrop-filter); */
+ 
+body {
+    background-image: url("./mosiac.png");
+    background-size: cover;
+    background-position: center center;
+    backdrop-filter: blur(5px) grayscale(1);
+}
+
+.transparent-block {
+    background-color: grey;
+    backdrop-filter: opacity(25%);
+    -webkit-backdrop-filter: opacity(25%);
+}
