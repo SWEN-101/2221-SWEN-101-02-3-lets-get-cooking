@@ -1,0 +1,29 @@
+body {
+    /* margin: 0px;
+    background-image: url();
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    backdrop-filter: blur(2px); */
+
+
+    /* Sample */
+    background-color: rgba( 54, 202, 197, 0.8);
+    background-image:
+    repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 3px, transparent 3px, transparent 60px),
+    repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 3px, transparent 60px),
+    linear-gradient(60deg, rgba(139,139,139,.6) 25%, transparent 25%, transparent 75%, rgba(139,139,139,.6) 75%, rgba(139,139,139,.6)),
+    linear-gradient(120deg, rgba(139,139,139,.6) 25%, transparent 25%, transparent 75%, rgba(139,139,139,.6) 75%, rgba(139,139,139,.6));
+    background-size: 70px 120px;
+}
+
+.transparent-block {
+    background-color: gray;
+    filter: opacity(50%)
+    /* -webkit-filter: opacity(50%) */
+}
+
+.primary-text {
+    filter: opacity(100%)
+    /* -webkit-filter: opacity(100%) */
+}
