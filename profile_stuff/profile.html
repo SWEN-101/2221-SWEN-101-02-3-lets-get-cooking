@@ -28,18 +28,34 @@
         </p>
 
         <p>
-            Total time with Pantree: 1 Month, 10 Days, 18:35.10
+        <div id="clock1">0:00:00</div>
         </p>
         <script>
-            function CountTime(time){
-                const time_pre = 'Total time with Pantree: 1 Month, 10 Days, 18:'
-                let time = time + 0.01
-                let message = 'I\'m working on it'
+            let time = new Date();
+            let startHour = time.getHours();
+            let startMin = time.getMinutes();
+            let startSec = time.getSeconds();
+            setInterval(countTime, 1000);
+            function countTime(){
+                const time_pre = 'Total time with Pantree: '
+                let time = new Date();
+                let hour = time.getHours() - startHour;
+                let min = time.getMinutes() - startMin;
+                let sec = time.getSeconds() - startSec;
+
+                for (timeSubset in [hour, min, sec]) {
+                    if (timeSubset < 10) {
+                        timeSubset = "0" + timeSubset;
+                    }
+                }
+
+                let currentTick = hour + ":" + min + ":" + sec;
+
+                document.getElementById("clock1")
+                    .innerHTML = currentTime;
             }
-            function reitr(){
-                let time = 35.10
-                CountTime(time)
-            }
+
+            countTime();
         </script>
 
         <p>
