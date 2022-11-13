@@ -22,18 +22,51 @@
 	background-position: center center;
 	/* filter: var(--regular-backdrop-filter); */
  
-.background {
+body {
+	margin: 0px;
     background-image: url("./mosiac.png");
     background-size: cover;
     background-position: center center;
 	background-attachment: fixed;
-    width: 100vw;
-	height: 100vh;
-    /* backdrop-filter: blur(5px) grayscale(1); */
+    /* width: 100vw;
+	height: 100vh; */
+    backdrop-filter: blur(2px); */
 }
 
 .transparent-block {
     background-color: grey;
-    backdrop-filter: opacity(25%);
-    -webkit-backdrop-filter: opacity(25%);
+    filter: opacity(50%);
+    -webkit-filter: opacity(50%);
 }
+
+.primary-text {
+	color: ;
+}
+
+.box {
+	opacity: 0.6;
+	background-color: green;
+	height: 40px;
+	width: 200px
+}
+ 
+.rgba {
+	/* opacity: 0.8; */
+	background-color: green;
+	background: rgba(100, 100, 100, 0.6);
+	height: 40px;
+	width: 200px
+	
+
+}
+
+input,
+        button {
+            box-sizing: border-box;
+            width: 100%;
+            margin: 20px auto;
+            padding: 12px 20px;
+            border: none;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 13px 21px rgba(0, 0, 0, 0.05);
+        }
