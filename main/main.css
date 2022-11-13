@@ -14,18 +14,23 @@
 
 .hamburger {
 	position: relative;
-	right: 0rem;
-	top: 0rem;
-	width: 4rem;
-	height: 4rem;
-	fill-rule: evenodd;
+	right: 6;
+	float: right;
+	top: 7;
+	/* margin: -5px; */
+	/* width: 4rem;
+	height: 4rem; */
+	/* fill-rule: evenodd;
 	clip-rule: evenodd;
 	stroke-linejoin: round;
-	stroke-miterlimit: 1.5;
+	stroke-miterlimit: 1.5; */
 	cursor: pointer;
 	z-index: 100;
-	background: var(--primary-green);
-	border-radius: 0 0 0 0.5rem;
+	margin-top: -5px;
+	margin-bottom: -5px;
+	/* vertical-align: center;S */
+	/* background: var(--primary-green);
+	border-radius: 0 0 0 0.5rem;  */
 }
 
  /* body {
@@ -82,6 +87,7 @@ body {
 
 .navbar-pantree-text {
 	text-align: center;
+	/* vertical-align: center; */
 	color: var(--eggshell-white);
 	font-size: 50px;
 }
