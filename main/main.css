@@ -2,14 +2,6 @@
 	--background: url('/main/mosiac.png');
 	--eggshell-white: #F9FEFF;
 	--primary-green: #628f6c;
-	/* --color-primary: #;
-	--color-selected: #;
-	--color-highlight: #;
-	--font-color: #;
-	--font-color-2: #;
-	--input-background: #;
-	--input-background-selected: #; */
-	--darkened-backdrop-filter: grayscale(1) brightness(0.3);
 }
 
 .hamburger {
@@ -17,33 +9,11 @@
 	right: 6;
 	float: right;
 	top: 7;
-	/* margin: -5px; */
-	/* width: 4rem;
-	height: 4rem; */
-	/* fill-rule: evenodd;
-	clip-rule: evenodd;
-	stroke-linejoin: round;
-	stroke-miterlimit: 1.5; */
 	cursor: pointer;
 	z-index: 100;
 	margin-top: -5px;
 	margin-bottom: -5px;
-	/* vertical-align: center;S */
-	/* background: var(--primary-green);
-	border-radius: 0 0 0 0.5rem;  */
 }
-
- /* body {
-    position: fixed;
-	z-index: -1;
-	width: 100vw;
-	height: 100vh;
-	background-image: var(--background);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	background-position: center center;
-	/* filter: var(--regular-backdrop-filter); */
  
 body {
 	margin: 0px;
@@ -51,28 +21,13 @@ body {
     background-size: cover;
     background-position: center center;
 	background-attachment: fixed;
-    /* width: 100vw;
-	height: 100vh; */
-    backdrop-filter: blur(2px) grayscale(1);
+    backdrop-filter: blur(2px) ;
 	height: 1000;
 }
 
-.transparent-block {
-    background-color: grey;
-    filter: opacity(50%);
-    -webkit-filter: opacity(50%);
-}
 
-.box {
-	opacity: 0.6;
-	background-color: green;
-	height: 40px;
-	width: 200px
-}
- 
+
 .rgba {
-	/* opacity: 0.8; */
-	background-color: green; 
 	background: rgba(255, 255, 255, 0.6);
 	box-shadow: 0 13px 21px rgba(0, 0, 0, 0.05);
 }
@@ -87,11 +42,11 @@ body {
 
 .navbar-pantree-text {
 	text-align: center;
-	/* vertical-align: center; */
 	color: var(--eggshell-white);
 	font-size: 50px;
 }
 
+/* Code I found Online For Button CSS, for referance
 input,
         button {
             box-sizing: border-box;
@@ -101,5 +56,5 @@ input,
             border: none;
             background: rgba(255, 255, 255, 0.1);
             box-shadow: 0 13px 21px rgba(0, 0, 0, 0.05);
-        }
+        } */
 
