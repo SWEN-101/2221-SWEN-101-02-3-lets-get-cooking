@@ -21,6 +21,7 @@
     visibility: hidden;
     -webkit-transition: visibility 0s, opacity 0.5s linear; 
     transition: visibility 0s, opacity 0.5s linear;
+    padding-top: .5vh;
    }
    
    /* Hover on Parent Container */

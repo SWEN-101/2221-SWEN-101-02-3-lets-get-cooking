@@ -18,21 +18,25 @@
         <img src="./main/hamburger.png" height="5%" width="2.5%" class="hamburger"></img>
       </div>
       <div class="clip-wrapper-menu">
-        <ul class="menu">
-          <li><a class="menuItem" href="#">Home</a></li>
-          <li><a class="menuItem" href="#">Profile</a></li>
-          <li><a class="menuItem" href="#">About</a></li>
-          <li><a class="menuItem" href="#">Contacts</a></li>
-        </ul>
+        <div class="menu">
+          <div class="menu-options-wrapper" onclick="window.location = './profile_stuff/Profile.html'">
+            <div class="menu-text"><i>*username*</i></div>
+          </div>
+          <div class="menu-options-wrapper" id="posts" onclick="document.getElementById('posts').textContent = 'WIP'">
+            <div class="menu-text">Posts</div>
+          </div>
+          <div class="menu-options-wrapper" onclick="window.location = './recipe_stuff/recipie.html'">
+            <div class="menu-text">Recipes</div>
+          </div>
+          <div class="menu-options-wrapper" onclick="window.location = './search/search.html'">
+            <div class="menu-text">Search</div>
+          </div>
+          <div class="menu-options-wrapper" onclick="window.location = './settings_stuff/settings_homepage.html'">
+            <div class="menu-text">Settings</div>
+          </div>
+        </div>
       </div>
       <div class="blur" display="none"></div>
-    </div>
-    <div class="rgba">
-      <nav class="primary-text">
-        <a href="./search/search.html">Search</a>
-        <a href="./recipe_stuff/recipie.html">Recipes</a>
-        <a href="./settings_stuff/settings_homepage.html">Settings</a>
-      </nav>
     </div>
     <div class="flex-center">
       <div class="rgba-feed">
