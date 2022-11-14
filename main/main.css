@@ -5,14 +5,23 @@
 }
 
 .hamburger {
-	position: relative;
-	right: 6;
+	/* position: absolute;
 	float: right;
-	top: 7;
 	cursor: pointer;
-	z-index: 100;
 	margin-top: -5px;
 	margin-bottom: -5px;
+	z-index: 301; */
+	position: absolute;
+	right: .7rem;
+	top: 0rem;
+	width: 2.3rem;
+	height: 3.5rem;
+	/* fill-rule: evenodd;
+	clip-rule: evenodd;
+	stroke-linejoin: round;
+	stroke-miterlimit: 1.5; */
+	cursor: pointer;
+	z-index: 301;
 }
  
 body {
@@ -25,12 +34,24 @@ body {
 	height: 1000;
 }
 
-
-
 .rgba {
 	background: rgba(255, 255, 255, 0.6);
 	box-shadow: 0 13px 21px rgba(0, 0, 0, 0.05);
 }
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* .navbar-flex-right {
+	position: absolute;
+	top: 10;
+	display: flex;
+	justify-content: right;
+	align-items: right;
+} */
 
 .navbar-fixed-top {
 	position: sticky;
@@ -38,13 +59,27 @@ body {
 	top: 0;
 	background-color: var(--primary-green);
 	box-shadow: 0 13px 21px rgba(0, 0, 0, 0.05);
+	z-index: 300;
 }
 
-.navbar-pantree-text {
+.navbar-pantree-text {	
+	/* box-sizing: border-box; */
+	transform-origin: center center;
+	/* position: inherit; */
 	text-align: center;
 	color: var(--eggshell-white);
+	cursor: pointer;
+	/* left: 50%; */
 	font-size: 50px;
+	z-index: 301;
+	width: 170;
 }
+
+.navbar-pantree-text:hover{
+	text-decoration: underline;
+}
+
+
 
 /* Code I found Online For Button CSS, for referance
 input,
