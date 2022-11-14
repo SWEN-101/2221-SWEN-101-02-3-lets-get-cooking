@@ -2,6 +2,7 @@
 	--background: url('/main/mosiac.png');
 	--eggshell-white: #F9FEFF;
 	--primary-green: #628f6c;
+	--secondary-green: #80aa89;
 }
 
 .hamburger {
@@ -22,6 +23,48 @@
 	cursor: pointer;
 	z-index: 301;
 }
+
+.closeIcon {
+	display: none;
+}
+
+.menu {
+	position: fixed;
+	transform: translateX(100%);
+	transition: transform 0.2s;
+	width: 20vw;
+	height: 100vh;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 99;
+	background: var(--secondary-green);
+	color: white;
+	list-style: none;
+	padding-top: 4rem;
+}
+
+.blur {
+	position: fixed;
+	/* transform: translateX(100%);
+	transition: transform 0.2s; */
+	display: none;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 50;
+	background: rgba(44, 44, 44, 0.6);
+	filter: blur(2px);
+	color: white;
+	padding-top: 4rem;
+}
+
+.showMenu {
+	transform: translateX(0);
+}
  
 body {
 	margin: 0px;
@@ -29,7 +72,6 @@ body {
     background-size: cover;
     background-position: center center;
 	background-attachment: fixed;
-    /* backdrop-filter: blur(2px) ; */
 	height: 1000;
 }
 
