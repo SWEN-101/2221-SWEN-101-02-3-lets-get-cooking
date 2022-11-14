@@ -29,7 +29,7 @@ body {
     background-size: cover;
     background-position: center center;
 	background-attachment: fixed;
-    backdrop-filter: blur(2px) ;
+    /* backdrop-filter: blur(2px) ; */
 	height: 1000;
 }
 
@@ -41,7 +41,7 @@ body {
 .rgba-feed {
 	background: rgba(255, 255, 255, 0.75);
 	box-shadow: 0 13px 21px rgba(0, 0, 0, 0.05);
-	width: 110vh;
+	width: 105vh;
 }
 
 .inner-feed-text-wrapper {
