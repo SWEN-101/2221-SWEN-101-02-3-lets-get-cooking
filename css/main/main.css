@@ -1,0 +1,37 @@
+:root {
+	--background: url('../../imgs/main/mosiac.png');
+	--eggshell-white: #F9FEFF;
+	--primary-green: #628f6c;
+	--secondary-green: #80aa89;
+}
+ 
+body {
+	margin: 0px;
+	background: no-repeat;
+    background-image: var(--background);
+    background-size: cover;
+    background-position: center center;
+	background-attachment: fixed;
+	height: 1000;
+}
+
+.rgba {
+	background: rgba(255, 255, 255, 0.6);
+	box-shadow: 0 13px 21px rgba(0, 0, 0, 0.05);
+}
+
+.rgba-feed {
+	background: rgba(255, 255, 255, 0.75);
+	box-shadow: 0 13px 21px rgba(0, 0, 0, 0.05);
+	width: 105vh;
+}
+
+.inner-feed-text-wrapper {
+	width: 100vh;
+}
+
+.post-title {
+	font-size: 20;
+
+}
+

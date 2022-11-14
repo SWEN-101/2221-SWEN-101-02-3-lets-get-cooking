@@ -5,8 +5,6 @@
     position: relative;
     width: 100vh;
     height: 100vh;
-    /* float: left; */
-    /* margin-right: 10px; */
    }
    
    .text_img div{
@@ -24,7 +22,6 @@
     padding-top: .5vh;
    }
    
-   /* Hover on Parent Container */
    .text_img:hover{
     cursor: pointer;
    }
