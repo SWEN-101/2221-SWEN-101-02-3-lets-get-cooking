@@ -8,15 +8,18 @@ const menuIcon = document.querySelector(".menuIcon");
 
 function toggleMenu() {
   if (menu.classList.contains("showMenu")) {
+    menu.style.display = "none";
     menu.classList.remove("showMenu");
     blur.style.display = "none";
-    closeIcon.style.display = "none";
-    menuIcon.style.display = "block";
+    // closeIcon.style.display = "none";
+    // menuIcon.style.display = "block";
   } else {
-    menu.classList.add("showMenu");
+    
+    menu.style.display = "inline";
+    menu.classList.add("showMenu");    
     blur.style.display = "inline";
-    closeIcon.style.display = "block";
-    menuIcon.style.display = "none";
+    // closeIcon.style.display = "block";
+    // menuIcon.style.display = "none";
   }
 }
 
