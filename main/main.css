@@ -53,6 +53,10 @@ body {
 
 .sticky-wrapper {
 	position: sticky;
+	position: -webkit-sticky;	
+	top: 0;
+	z-index: 300;
+
 }
 
 .navbar-fixed-top {

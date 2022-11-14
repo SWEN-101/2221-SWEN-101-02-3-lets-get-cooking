@@ -8,21 +8,23 @@
     <meta charset="utf-8" />
   </head>
   <body>
-    <div class="navbar-fixed-top">
-      <div class="flex-center">
-        <div class="navbar-pantree-text" onclick="window.location = './main.html'">
-          Pantree
+    <div class="sticky-wrapper">
+      <div class="navbar-fixed-top">
+        <div class="flex-center">
+          <div class="navbar-pantree-text" onclick="window.location = './main.html'">
+            Pantree
+          </div>
         </div>
+        <img src="./main/hamburger.png" height="5%" width="2.5%" class="hamburger"></img>
       </div>
-      <img src="./main/hamburger.png" height="5%" width="2.5%" class="hamburger"></img>
+      <ul class="menu">
+        <li><a class="menuItem" href="#">Home</a></li>
+        <li><a class="menuItem" href="#">Profile</a></li>
+        <li><a class="menuItem" href="#">About</a></li>
+        <li><a class="menuItem" href="#">Contacts</a></li>
+      </ul>
+      <div class="blur" display="none"></div>
     </div>
-    <ul class="menu">
-      <li><a class="menuItem" href="#">Home</a></li>
-      <li><a class="menuItem" href="#">Profile</a></li>
-      <li><a class="menuItem" href="#">About</a></li>
-      <li><a class="menuItem" href="#">Contacts</a></li>
-    </ul>
-    <div class="blur" display="none"></div>
     <div class="rgba">
       <nav class="primary-text">
         <a href="./search/search.html">Search</a>
