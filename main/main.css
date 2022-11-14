@@ -7,7 +7,6 @@
 .hamburger {
 	/* position: absolute;
 	float: right;
-	cursor: pointer;
 	margin-top: -5px;
 	margin-bottom: -5px;
 	z-index: 301; */
@@ -39,6 +38,21 @@ body {
 	box-shadow: 0 13px 21px rgba(0, 0, 0, 0.05);
 }
 
+.rgba-feed {
+	background: rgba(255, 255, 255, 0.75);
+	box-shadow: 0 13px 21px rgba(0, 0, 0, 0.05);
+	width: 110vh;
+}
+
+.inner-feed-text-wrapper {
+	width: 100vh;
+}
+
+.post-title {
+	font-size: 20;
+
+}
+
 .flex-center {
 	display: flex;
 	justify-content: center;
@@ -63,13 +77,10 @@ body {
 }
 
 .navbar-pantree-text {	
-	/* box-sizing: border-box; */
 	transform-origin: center center;
-	/* position: inherit; */
 	text-align: center;
 	color: var(--eggshell-white);
 	cursor: pointer;
-	/* left: 50%; */
 	font-size: 50px;
 	z-index: 301;
 	width: 170;
