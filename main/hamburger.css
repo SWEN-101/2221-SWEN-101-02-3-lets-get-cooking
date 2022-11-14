@@ -21,10 +21,23 @@
 	display: none;
 }
 
+.clip-wrapper-menu{
+	position: absolute;
+    overflow: clip;
+    width: 20vw;
+	height: 100vh;
+    top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 99;
+	padding-top: 4rem;
+
+}
+
 .menu {
 	position: absolute;
     /* float: right; */
-	display: none;
+	visibility: none;
 	transform: translateX(100%);
 	transition: transform 0.2s;
 	width: 20vw;

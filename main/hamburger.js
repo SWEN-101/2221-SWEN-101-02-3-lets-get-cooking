@@ -8,14 +8,14 @@ const menuIcon = document.querySelector(".menuIcon");
 
 function toggleMenu() {
   if (menu.classList.contains("showMenu")) {
-    menu.style.display = "none";
+    menu.style.visibility = "hidden";
     menu.classList.remove("showMenu");
     blur.style.display = "none";
     // closeIcon.style.display = "none";
     // menuIcon.style.display = "block";
   } else {
     
-    menu.style.display = "inline";
+    menu.style.visibility = "visible";
     menu.classList.add("showMenu");    
     blur.style.display = "inline";
     // closeIcon.style.display = "block";
