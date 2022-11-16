@@ -13,12 +13,11 @@ body {
     background-size: cover;
     background-position: center center;
 	background-attachment: fixed;
-	height: 1000;
 }
 
 .rgba {
 	background: rgba(255, 255, 255, 0.6);
-	box-shadow: 0 13px 21px rgba(0, 0, 0, 0.05);
+	/* box-shadow: 0 13px 21px rgba(0, 0, 0, 0.05); */
 }
 
 .rgba-feed {
@@ -60,6 +59,7 @@ body {
 
 .account-wrapper:hover p{
 	text-decoration: underline;
+	cursor: pointer;
 }
 
 .account-wrapper img{
@@ -73,5 +73,6 @@ body {
 
 .account-wrapper:hover img{
 	transform: scale(1.05);
+	cursor: pointer;
 }
 
