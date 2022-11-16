@@ -1,6 +1,7 @@
 :root {
 	--background: url('../../imgs/main/mosiac.png');
 	--eggshell-white: #F9FEFF;
+	--gray: #b5babb;
 	--primary-green: #628f6c;
 	--secondary-green: #80aa89;
 }
@@ -28,10 +29,49 @@ body {
 
 .inner-feed-text-wrapper {
 	width: 100vh;
+	margin-left: 5vh;
+	margin-right: 5vh;
 }
 
-.post-title {
-	font-size: 20;
+.post-title-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 0vh;
+	margin-bottom: 2vh;
+}
 
+.post-title-wrapper p{
+	font-size: 4vh;
+	margin-bottom: 0vh;
+}
+
+.account-wrapper{
+	display: flex;
+	margin-top: 1.5vh;
+	margin-bottom: -9.5vh;
+}
+
+.account-wrapper p{
+	top: .5vh;
+	font-size: 2vh;
+	color: var(--gray);
+}
+
+.account-wrapper:hover p{
+	text-decoration: underline;
+}
+
+.account-wrapper img{
+	margin-top: .75vh;
+	margin-bottom: 1.25vh;
+	margin-right: 1vh;
+	height: 4.5vh;
+	width: 4.5vh;
+	top: 50%;
+}
+
+.account-wrapper:hover img{
+	transform: scale(1.05);
 }
 
