@@ -135,6 +135,7 @@
 	cursor: pointer;
     background: rgba(255, 255, 255, 0.068);
     text-decoration: underline;
+	z-index: 305;
 }
 .menu-text{
     color: var(--eggshell-white);
@@ -145,4 +146,14 @@
 
 .showMenu {
 	transform: translateX(0);
+}
+
+.leaves {
+	position: absolute;
+	top: 5vh;
+	mix-blend-mode: soft-light;
+	height: 95vh;
+	pointer-events: none;
+	z-index: 30;
+
 }
