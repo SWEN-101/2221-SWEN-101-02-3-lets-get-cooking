@@ -1,6 +1,57 @@
 <!DOCTYPE html>
 
 <html>
+  <head>
+    <link rel="stylesheet" href="../css/main/main.css">
+    <link rel="stylesheet" href="../css/main/hover.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Main feed | Pantree</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <!-- BEGGINING OF NAVBAR -->
+    <div class="sticky-wrapper">
+      <div class="navbar-fixed-top">
+        <div class="flex-center">
+          <div class="navbar-pantree-text" onclick="window.location = '../main.html'">
+            Pantree
+          </div>
+        </div>
+        <img src="../imgs/hamburger.png" height="5%" width="2.5%" class="hamburger"></img>
+      </div>
+      <div class="clip-wrapper-menu">
+        <div class="menu">
+          <img src="../imgs/leaf_fall_4.gif" class="leaves"></img>
+          <div class="menu-options-wrapper" onclick="window.location = '../profile_stuff/profile.html'">
+            <div class="menu-text"><i>*username*</i></div>
+          </div>
+          <div class="menu-options-wrapper" id="posts" onclick="document.getElementById('posts').textContent = 'WIP'">
+            <div class="menu-text">Posts</div>
+          </div>
+          <div class="menu-options-wrapper" onclick="window.location = '../recipe_stuff/recipie.html'">
+            <div class="menu-text">Recipes</div>
+          </div>
+          <div class="menu-options-wrapper" id="pantry" onclick="document.getElementById('pantry').textContent = 'WIP'">
+            <div class="menu-text">Pantry</div>
+          </div>
+          <div class="menu-options-wrapper" onclick="window.location = '../search/search.html'">
+            <div class="menu-text">Search</div>
+          </div>
+          <div class="menu-options-wrapper" onclick="window.location = '../settings_stuff/settings_homepage.html'">
+            <div class="menu-text">Settings</div>
+          </div>
+        </div>
+      </div>
+      <div class="blur" display="none"></div>
+    </div>
+    </div>
+    <script type="text/javascript" src="../js/hamburger.js"></script>
+  </body>
+</html>
+
+
+<html>
     <head>
         <title>Profile | Pantree</title>
     </head>
@@ -12,11 +63,11 @@
         </nav>
 
         <h1>Profile</h1>
-            <h2>Shanna Bannana</h2>
+            <h2>Hannah Shananna Bannanana</h2>
 
         <p contenteditable = "true">
             Like cats, Like my mom, Like grilled cheese
-            More info maybe 16 billion times just to show that the text (should) will fit to paragraph blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.
+            More info maybe 16 billion times just to show that the text (should) will fit to paragraph blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah hello blah.
             
             <b style = 'color:rgb(99, 99, 99);', contenteditable = "false">
                 Edit
@@ -28,18 +79,89 @@
         </p>
 
         <p>
-            Total time with Pantree: 1 Month, 10 Days, 18:35.10
+        <div id="clock1">0:00:00</div>
         </p>
         <script>
-            function CountTime(time){
-                const time_pre = 'Total time with Pantree: 1 Month, 10 Days, 18:'
-                let time = time + 0.01
-                let message = 'I\'m working on it'
+            let time = new Date();
+            let startHour = time.getHours();
+            let startMin = time.getMinutes();
+            let startSec = time.getSeconds();
+
+            var years = (-1);
+            var months = randomInt(12);
+            var days = randomInt(31);
+            let yearsBack = years
+            let monthsBack = months
+            let daysBack = days
+            years += ' Years, '
+            months += ' Months, '
+            days += ' Days, '
+
+            setInterval(countTime, 1000);
+
+            function randomInt(max) {
+                return Math.floor(Math.random() * (max))
             }
-            function reitr(){
-                let time = 35.10
-                CountTime(time)
+
+            function subTime() {
+                let monthDict = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+                let additionDict = ['st', 'nd', 'rd', 'th']
+                let time   = new Date();
+                let year2  = time.getFullYear();
+                let month2 = time.getMonth();
+                let day2   = time.getDay();
+
+                year2 -= yearsBack;
+                month2 -= monthsBack;
+                day2 -= daysBack;
+
+                // if day2 = 1
+
+                result = 'joined: ' + monthDict[month2 - 1] + ' ' + day2 + addition;
+
+                return result
             }
+
+            function countTime() {
+                const timePreface = 'Total time with Pantree: '
+                let time = new Date();
+                let hour = time.getHours() - startHour;
+                let min = time.getMinutes() - startMin;
+                let sec = time.getSeconds() - startSec;
+
+                if (sec < 0) {
+                    sec += 60
+                    min -= 1
+                }
+                if (min < 0) {
+                    min += 60
+                    hour -= 1
+                }
+                if (sec < 0) {
+                    hour += 24
+                    days -= 1
+                }
+
+                if (hour < 10) {
+                    hour = "0" + hour;
+                }
+                if (min < 10) {
+                    min = "0" + min;
+                }
+                if (sec < 10) {
+                    sec = "0" + sec;
+                }
+                let currentTime = timePreface + years + months + days + hour + ":" + min + ":" + sec;
+
+                document.getElementById("clock1")
+                    .innerHTML = currentTime + '\n' + subTime();
+
+                return [hour, min, sec]
+            }
+
+            var currentTime = countTime();
+            subTime();
+
         </script>
 
         <p>
@@ -48,6 +170,10 @@
 
         <p>
             SSN: 555555
+        </p>
+
+        <p>
+            Recent Posts
         </p>
     </body>
 </html>
