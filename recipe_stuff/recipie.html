@@ -2,17 +2,32 @@
 
 <html>
     <head>
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="../css/main/main.css">
+        <link rel="stylesheet" href="../css/main/hover.css">
+        <link rel="stylesheet" href="../css/navbar.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Recipes | PanTree</title>
     </head>
     
     <body>
-        <nav>
-            <a href="../profile_stuff/profile.html">Profile</a>
-            <a href="../main.html">Main</a>
-            <a href="../settings_stuff/settings_homepage.html">Settings</a>
 
-        </nav>
+        <div class="sticky-wrapper">
+            <div class="navbar-fixed-top">
+                <div class="flex-center">
+                    
+                    <div class="navbar-pantree-text" onclick="window.location = '../main.html'">
+                        Pantree
+                    </div>
+                    <div class="navbar-profile-text" onclick="window.location = '../profile_stuff/profile.html'">
+                        Profile
+                    </div>
+                    <div class="navbar-settings-text" onclick="window.location = '../settings_stuff/settings_homepage.html'">
+                        Settings
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <h1>Recipe</h1>
         <br>
         <br>
