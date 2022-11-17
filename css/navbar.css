@@ -51,6 +51,24 @@
 	z-index: 301;
 }
 
+.back-button {
+	position: absolute;
+	left: .7rem;
+	top: .35rem;
+	width: 3rem;
+	height: 2.8rem;
+	cursor: pointer;
+	z-index: 301;
+}
+
+.back-button:hover {
+    /* width: 3.2rem;
+	height: 3.2rem;
+    left: .65rem;
+	top: -.05rem; */
+	transform: scale(1.1);
+}
+
 .hamburger:hover{
     width: 2.4rem;
 	height: 3.6rem;
