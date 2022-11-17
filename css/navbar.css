@@ -1,0 +1,160 @@
+:root {
+	--eggshell-white: #F9FEFF;
+	--primary-green: #628f6c;
+	--secondary-green: #80aa89;
+}
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sticky-wrapper {
+	position: sticky;
+	position: -webkit-sticky;	
+	top: 0;
+	z-index: 300;
+
+}
+
+.navbar-fixed-top {
+	position: sticky;
+	position: -webkit-sticky;	 
+	top: 0;
+	background-color: var(--primary-green);
+	box-shadow: 0 13px 21px rgba(0, 0, 0, 0.05);
+	z-index: 300;
+}
+
+.navbar-pantree-text {	
+	transform-origin: center center;
+	text-align: center;
+	color: var(--eggshell-white);
+	cursor: pointer;
+	font-size: 50px;
+	z-index: 301;
+	width: 170;
+}
+
+.navbar-pantree-text:hover{
+	text-decoration: underline;
+}
+
+.hamburger {
+	position: absolute;
+	right: .7rem;
+	top: 0rem;
+	width: 2.3rem;
+	height: 3.5rem;
+	cursor: pointer;
+	z-index: 301;
+}
+
+.hamburger:hover{
+    width: 2.4rem;
+	height: 3.6rem;
+    right: .65rem;
+	top: -.05rem;
+}
+
+.closeIcon {
+	display: none;
+}
+
+.clip-wrapper-menu{
+	position: absolute;
+    overflow: clip;
+    width: 20vw;
+	height: 100vh;
+    top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 99;
+	padding-top: 4rem;
+
+}
+
+.menu {
+	position: absolute;
+	transform: translateX(100%);
+	transition: transform 0.2s;
+	width: 20vw;
+	height: 100vh;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 99;
+	background: var(--secondary-green);
+	color: white;
+	list-style: none;
+	padding-top: 4rem;
+	box-shadow: 0 13px 21px rgba(0, 0, 0, 0.05);
+
+}
+
+.blur {
+	position: absolute;
+	display: none;
+	width: 99vw;
+	height: 100vh;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 95;
+	background: rgba(44, 44, 44, 0.6);
+	filter: blur(2px);
+	color: white;
+	padding-top: 4rem;
+	padding-left: 0rem;
+    background-blend-mode: darken;
+
+}
+
+.icon{
+    height: 5vh;
+    width: 5vh;
+}
+
+.profile-icon{
+    position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+    scale: 10vw 10vw;
+}
+
+.menu-options-wrapper{
+    height: 6vh;
+    width: 20vw;
+	right: 0;
+}
+
+.menu-options-wrapper:hover{
+	cursor: pointer;
+    background: rgba(255, 255, 255, 0.068);
+    text-decoration: underline;
+	z-index: 305;
+}
+.menu-text{
+    color: var(--eggshell-white);
+    font-size: 5vh;
+    top: 50%;
+    padding-left: .8vh;
+}
+
+.showMenu {
+	transform: translateX(0);
+}
+
+.leaves {
+	position: absolute;
+	top: 5vh;
+	mix-blend-mode: soft-light;
+	height: 95vh;
+	pointer-events: none;
+	z-index: 30;
+}
+
+/* WILL REMOVE HOPEFULLY I NEED TO REDELOY THE GITUB PAGES */
