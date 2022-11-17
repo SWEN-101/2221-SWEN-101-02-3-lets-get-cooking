@@ -90,6 +90,9 @@
             var years = (-1);
             var months = randomInt(12);
             var days = randomInt(31);
+            years += ' Years, '
+            months += ' Months, '
+            days += ' Days, '
 
             setInterval(countTime, 1000);
 
@@ -97,7 +100,22 @@
                 return Math.floor(Math.random() * (max))
             }
 
-            function countTime(years, months, days){
+            function subTime() {
+                let time   = new Date();
+                let year2  = time.getFullYear();
+                let month2 = time.getMonth();
+                let day2   = time.getDay();
+
+                // year2 -= year;
+                // month2 -= months;
+
+                // result = True;
+
+                // let number = 2;
+                return year2
+            }
+
+            function countTime() {
                 const timePreface = 'Total time with Pantree: '
                 let time = new Date();
                 let hour = time.getHours() - startHour;
@@ -126,18 +144,17 @@
                 if (sec < 10) {
                     sec = "0" + sec;
                 }
-
-                years += ' Years, '
-                months += ' Months, '
-                days += ' Days, '
-
                 let currentTime = timePreface + years + months + days + hour + ":" + min + ":" + sec;
 
                 document.getElementById("clock1")
-                    .innerHTML = currentTime;
+                    .innerHTML = currentTime + '\n' + subTime();
+
+                return [hour, min, sec]
             }
 
-            countTime(years, months, days);
+            var currentTime = countTime();
+            subTime();
+
         </script>
 
         <p>
