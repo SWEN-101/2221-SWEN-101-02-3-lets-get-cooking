@@ -90,6 +90,9 @@
             var years = (-1);
             var months = randomInt(12);
             var days = randomInt(31);
+            let yearsBack = years
+            let monthsBack = months
+            let daysBack = days
             years += ' Years, '
             months += ' Months, '
             days += ' Days, '
@@ -101,18 +104,22 @@
             }
 
             function subTime() {
+                let monthDict = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+                let additionDict = ['st', 'nd', 'rd', 'th']
                 let time   = new Date();
                 let year2  = time.getFullYear();
                 let month2 = time.getMonth();
                 let day2   = time.getDay();
 
-                // year2 -= year;
-                // month2 -= months;
+                year2 -= yearsBack;
+                month2 -= monthsBack;
+                day2 -= daysBack;
 
-                // result = True;
+                // if day2 = 1
 
-                // let number = 2;
-                return year2
+                result = 'joined: ' + monthDict[month2 - 1] + ' ' + day2 + addition;
+
+                return result
             }
 
             function countTime() {
