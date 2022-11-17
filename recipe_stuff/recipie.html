@@ -3,16 +3,51 @@
 <html>
     <head>
         <link rel="stylesheet" href="../css/main/main.css">
+        <link rel="stylesheet" href="../css/main/hover.css">
+        <link rel="stylesheet" href="../css/navbar.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <title>Recipes | PanTree</title>
     </head>
     
     <body>
-        <nav>
-            <a href="../profile_stuff/profile.html">Profile</a>
-            <a href="../main.html">Main</a>
-            <a href="../settings_stuff/settings_homepage.html">Settings</a>
-
-        </nav>
+        <!-- BEGINNING OF NAVBAR -->
+    <div class="sticky-wrapper">
+        <div class="navbar-fixed-top">
+          <div class="flex-center">
+            <div class="navbar-pantree-text" onclick="window.location = '../main.html'">
+              Pantree
+            </div>
+          </div>
+          <img src="../imgs/hamburger.png" height="5%" width="2.5%" class="hamburger"></img>
+        </div>
+        <div class="clip-wrapper-menu">
+          <div class="menu">
+            <img src="../imgs/leaf_fall_4.gif" class="leaves"></img>
+            <div class="menu-options-wrapper" onclick="window.location = '../profile_stuff/profile.html'">
+              <div class="menu-text"><i>*username*</i></div>
+            </div>
+            <div class="menu-options-wrapper" id="posts" onclick="document.getElementById('posts').textContent = 'WIP'">
+              <div class="menu-text">Posts</div>
+            </div>
+            <div class="menu-options-wrapper" onclick="window.location = '../recipe_stuff/recipie.html'">
+              <div class="menu-text">Recipes</div>
+            </div>
+            <div class="menu-options-wrapper" id="pantry" onclick="document.getElementById('pantry').textContent = 'WIP'">
+              <div class="menu-text">Pantry</div>
+            </div>
+            <div class="menu-options-wrapper" onclick="window.location = '../search/search.html'">
+              <div class="menu-text">Search</div>
+            </div>
+            <div class="menu-options-wrapper" onclick="window.location = '../settings_stuff/settings_homepage.html'">
+              <div class="menu-text">Settings</div>
+            </div>
+          </div>
+        </div>
+        <div class="blur" display="none"></div>
+      </div>
+      <!-- END OF NAVBAR -->
+       
         <h1>Recipe</h1>
         <br>
         <br>
@@ -45,6 +80,6 @@
         
 
 
-
+        <script type="text/javascript" src="../js/hamburger.js"></script>
     </body>
 </html>
