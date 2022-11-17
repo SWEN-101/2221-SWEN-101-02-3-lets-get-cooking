@@ -8,6 +8,7 @@
     <meta charset="utf-8" />
   </head>
   <body>
+    <!-- BEGGINING OF NAVBAR -->
     <div class="sticky-wrapper">
       <div class="navbar-fixed-top">
         <div class="flex-center">
@@ -19,6 +20,7 @@
       </div>
       <div class="clip-wrapper-menu">
         <div class="menu">
+          <img src="./imgs/leaf_fall_4.gif" class="leaves"></img>
           <div class="menu-options-wrapper" onclick="window.location = './profile_stuff/profile.html'">
             <div class="menu-text"><i>*username*</i></div>
           </div>
@@ -27,6 +29,9 @@
           </div>
           <div class="menu-options-wrapper" onclick="window.location = './recipe_stuff/recipie.html'">
             <div class="menu-text">Recipes</div>
+          </div>
+          <div class="menu-options-wrapper" id="pantry" onclick="document.getElementById('pantry').textContent = 'WIP'">
+            <div class="menu-text">Pantry</div>
           </div>
           <div class="menu-options-wrapper" onclick="window.location = './search/search.html'">
             <div class="menu-text">Search</div>
@@ -38,11 +43,49 @@
       </div>
       <div class="blur" display="none"></div>
     </div>
+    <!-- END OF NAVBAR -->
     <div class="flex-center">
       <div class="rgba-feed">
         <div class="flex-center">
+          <div class="inner-feed-text-wrapper">
+            <div class="account-wrapper">
+              <img src="./imgs/icon.png"/>
+              <p>Bloingus Sploingus</p>
+            </div>
+            <div class="post-title-wrapper">
+              <p>Detroit Style Pizza - Easy</p></div>
+          </div>
+        </div>
+        <div class="flex-center">
           <div class="text_img" onclick="window.location = './recipe_stuff/recipie.html'">
             <img src='./foodPics/pizza.webp' width='100%' height='100%'>
+            <div>Cheesy Detroit Style Pizza</div>
+          </div> 
+        </div>
+      </div>
+    </div>
+    <div class="flex-center">
+      <div class="rgba-feed">
+        <div class="inner-feed-text-wrapper">
+          <p class="text-primary">hello</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex-center">
+      <div class="rgba-feed">
+        <div class="flex-center">
+          <div class="inner-feed-text-wrapper">
+            <div class="account-wrapper">
+              <img src="./imgs/icon.png"/>
+              <p>Shananna Bannana</p>
+            </div>
+            <div class="post-title-wrapper">
+              <p>Mom's Grilled Cheese</p></div>
+          </div>
+        </div>
+        <div class="flex-center">
+          <div class="text_img" onclick="window.location = './recipe_stuff/recipie.html'">
+            <img src='./foodPics/grilledCheese.webp' width='100%' height='100%'>
             <div>Cheesy Detroit Style Pizza</div>
           </div> 
         </div>
