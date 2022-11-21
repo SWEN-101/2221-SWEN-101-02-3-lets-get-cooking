@@ -57,10 +57,6 @@
     </head>
 
     <body>
-        <nav>
-            <a href="../main.html">Home</a>
-            <a href="../settings_stuff/settings_homepage.html">Back</a>
-        </nav>
 
         <h1>Profile</h1>
             <h2>Hannah Shananna Bannanana</h2>
@@ -111,15 +107,27 @@
                 let month2 = time.getMonth();
                 let day2   = time.getDay();
 
-                year2 -= yearsBack;
-                month2 -= monthsBack;
-                day2 -= daysBack;
+                // year2 -= yearsBack;
+                // month2 -= monthsBack;
+                // day2 -= daysBack;
 
-                // if day2 = 1
+                // let addCut = 1
+                // if (day2 == 1 || 21 || 31) {
+                //     addCut = 1
+                // } else if (day2 == 2 || 22){
+                //     addCut = 2
+                // } else if (day2 == 3 || 23) {
+                //     addCut = 3
+                // } else {
+                //     addCut = 4
+                // }
+                    // toString
+                result = 'joined: ';
+                // + monthDict[month2 - 1];// + ' ' + day2 + additionDict[addCut - 1];
+                // result = 'joined'
 
-                result = 'joined: ' + monthDict[month2 - 1] + ' ' + day2 + addition;
-
-                return result
+                document.getElementById("clock2")
+                    .innerHTML = result;
             }
 
             function countTime() {
@@ -154,13 +162,12 @@
                 let currentTime = timePreface + years + months + days + hour + ":" + min + ":" + sec;
 
                 document.getElementById("clock1")
-                    .innerHTML = currentTime + '\n' + subTime();
+                    .innerHTML = currentTime;
 
                 return [hour, min, sec]
             }
 
             var currentTime = countTime();
-            subTime();
 
         </script>
 
@@ -173,7 +180,10 @@
         </p>
 
         <p>
-            Recent Posts
+            Recent Posts: 
+            <b style = 'color:rgb(99, 99, 99);', contenteditable = "false">
+                You have no recent posts
+            </b>
         </p>
     </body>
 </html>
