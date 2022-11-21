@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/main/main.css">
+        <link rel="stylesheet" href="../css/main/hover.css">
+        <link rel="stylesheet" href="../css/navbar.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Recipes | PanTree</title>
+    </head>
+    
+    <body>
+        <!-- BEGINNING OF NAVBAR -->
+    <div class="sticky-wrapper">
+        <div class="navbar-fixed-top">
+            <div class="flex-center">
+                <div class="navbar-pantree-text" onclick="window.location = '../main.html'">
+                    Pantree
+                </div>
+            </div>
+          </div>
+          <img src="../imgs/hamburger.png" height="5%" width="2.5%" class="hamburger"></img>
+          <img src="../imgs/back.png" height="5%" width="2.5%" class="back-button" onclick="window.location = '../main.html'"></img>
+        </div>
+    <div class="clip-wrapper-menu">
+        <div class="menu">
+            <img src="../imgs/leaf_fall_4.gif" class="leaves"></img>
+            <div class="menu-options-wrapper" onclick="window.location = '../profile_stuff/profile.html'">
+                <div class="menu-text"><i>*username*</i></div>
+            </div>
+            <div class="menu-options-wrapper" id="posts" onclick="document.getElementById('posts').textContent = 'WIP'">
+                <div class="menu-text">Posts</div>
+            </div>
+            <div class="menu-options-wrapper" onclick="window.location = '../recipe_stuff/recipie.html'">
+                <div class="menu-text">Recipes</div>
+            </div>
+            <div class="menu-options-wrapper" id="pantry" onclick="document.getElementById('pantry').textContent = 'WIP'">
+                <div class="menu-text">Pantry</div>
+            </div>
+            <div class="menu-options-wrapper" onclick="window.location = '../search/search.html'">
+                <div class="menu-text">Search</div>
+            </div>
+            <div class="menu-options-wrapper" onclick="window.location = '../settings_stuff/settings_homepage.html'">
+                <div class="menu-text">Settings</div>
+            </div>
+        </div>
+    </div>
+    <div class="blur" display="none"></div>
+    </div>
+    <!-- END OF NAVBAR -->
+        <div class="flex-center">
+            <div class="rgba-feed">
+                <div class="flex-center">
+                    <div class="inner-feed-text-wrapper">
+                        <h1>Recipe</h1>
+                        <br>
+                        <br>
+
+                        <p>Comments</p>
+                        <p>I first got this recipe from a guy who ran th best pizza shop downtown. His business went under the same time a lot of others did back when the property rental expenses rised back in the early 2000's.</p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex-center">
+            <img src="../foodPics/deep dish pizza.jpg" height="50%" width="50%"/>
+        </div>
+            <br>
+            <div class="flex-center">
+                <div class="rgba-feed">
+                    <h2>--Ingredients--</h2>
+                    <br>
+                    <ul>
+                    <li>Pizza Crust</li>
+                    <li>cheese</li>
+                    <li>Sauces</li>
+                    </ul>
+                    <br>
+                    <h2>--Steps--</h2>
+                    <ol>
+                    <li>get Ingredients</li>
+                    <li>heat pan</li>
+                    <li>make a good pizza</li>
+                    <li>put in pan and cook</li>
+                    <li>enjoy :)</li>
+                    </ol>
+                </div>
+            </div>
+        
+
+        
+
+
+        <script type="text/javascript" src="../js/hamburger.js"></script>
+    </body>
+</html>
