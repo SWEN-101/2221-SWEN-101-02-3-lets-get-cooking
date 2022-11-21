@@ -2,15 +2,66 @@
 
 <html>
     <head>
-        <title>Account | Pantree</title>
-        <link href="style.css" rel="stylesheet">
+        <title>Settings | Pantree</title>
+        <link rel="stylesheet" href="../css/main/main.css">
+        <link rel="stylesheet" href="../css/main/hover.css">
+        <link rel="stylesheet" href="../css/navbar.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8" />
     </head>
 
     <body>
-        <nav>
-            <a href="./settings_homepage.html">Settings Home</a>
-        </nav>
+        <!-- BEGGINING OF NAVBAR -->
+        <div class="sticky-wrapper">
+            <div class="navbar-fixed-top">
+            <div class="flex-center">
+                <div class="navbar-pantree-text" onclick="window.location = '../main.html'">
+                Pantree
+                </div>
+            </div>
+            <img src="../imgs/hamburger.png" height="5%" width="2.5%" class="hamburger"></img>
+            <img src="../imgs/back.png" height="5%" width="2.5%" class="back-button" onclick="window.location = './settings_homepage.html'"></img>
+            </div>
+            <div class="clip-wrapper-menu">
+            <div class="menu">
+                <img src="../imgs/leaf_fall_4.gif" class="leaves"></img>
+                <div class="menu-options-wrapper" onclick="window.location = '../profile_stuff/profile.html'">
+                <div class="menu-text"><i>*username*</i></div>
+                </div>
+                <div class="menu-options-wrapper" id="posts" onclick="document.getElementById('posts').textContent = 'WIP'">
+                <div class="menu-text">Posts</div>
+                </div>
+                <div class="menu-options-wrapper" onclick="window.location = '../recipe_stuff/recipie.html'">
+                <div class="menu-text">Recipes</div>
+                </div>
+                <div class="menu-options-wrapper" id="pantry" onclick="document.getElementById('pantry').textContent = 'WIP'">
+                <div class="menu-text">Pantry</div>
+                </div>
+                <div class="menu-options-wrapper" onclick="window.location = '../search/search.html'">
+                <div class="menu-text">Search</div>
+                </div>
+                <div class="menu-options-wrapper" onclick="window.location = '../settings_stuff/settings_homepage.html'">
+                <div class="menu-text">Settings</div>
+                </div>
+            </div>
+            </div>
+            <div class="blur" display="none"></div>
+        </div>
+      <!-- END OF NAVBAR -->
+        <div class="flex-center">
+        <div class="rgba-feed">
         <br>
-        <h1>Account</h1>
+        <br>
+        <div class="flex-center">
+            <h1>Account</h1>
+        </div>
+        <br>
+        <div class="flex-center">
+            <p>
+                you
+            </p>
+        </div>
+        <script type="text/javascript" src="../js/hamburger.js"></script>
     </body>
 </html>
+
