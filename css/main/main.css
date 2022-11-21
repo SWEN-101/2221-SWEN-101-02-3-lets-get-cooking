@@ -33,6 +33,10 @@ body {
 	margin-bottom: 2vh;
 }
 
+.text-primary {
+	width: 100vh;
+}
+
 .post-title-wrapper {
 	display: flex;
 	justify-content: center;
