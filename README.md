@@ -20,7 +20,8 @@ An online E-store system built in github.io .. etc. <_replace with other platfor
 
 ## How to access it or run it  <_add when applicable_>
 
-1. Clone the repository and go to the root directory.
+1. Go to Deployment, link is https://swen-101.github.io/2221-SWEN-101-02-3-lets-get-cooking/
+
 <!-- 2.  
 3.  
 4.   -->
@@ -30,6 +31,7 @@ An online E-store system built in github.io .. etc. <_replace with other platfor
 
 Document any known bug or nuisance.
 If any shortcomings, make clear what these are and where they are located.
+>> There are none that we are aware of at this moment.
 
 ## Link or full list of requirements
 Link to Google Slides Presentation: https://docs.google.com/presentation/d/1aiEgo5xbXQiLILuRMVf0TWpPrAiiHqLwest9Ahanm-U/edit#slide=id.p 
