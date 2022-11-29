@@ -32,14 +32,10 @@ Document any known bug or nuisance.
 If any shortcomings, make clear what these are and where they are located.
 
 ## Link or full list of requirements
- <_you could linkto the specific private board where your backlog is kept_>
-
 Link to Google Slides Presentation: https://docs.google.com/presentation/d/1aiEgo5xbXQiLILuRMVf0TWpPrAiiHqLwest9Ahanm-U/edit#slide=id.p 
+
 Link to Presentation Video: https://www.youtube.com/watch?v=jfIdjGIUXK8 
 
 
 ## License
-
-<_replace with the type of license you will use for the project_> e.g. MIT License
-
 Commercial or Proprietary License
