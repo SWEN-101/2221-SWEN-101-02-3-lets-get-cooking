@@ -19,7 +19,7 @@ An online recipie sharing location built in github.io using HTML, CSS and JS
 -LiterallyAFlower, some basic knowledge
 - -->
 
-## How to access it or run it  <_add when applicable_>
+## How to access it or run it
 
 1. Go to Deployment, link is https://swen-101.github.io/2221-SWEN-101-02-3-lets-get-cooking/
 
