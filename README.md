@@ -31,7 +31,7 @@ An online E-store system built in github.io .. etc. <_replace with other platfor
 
 Document any known bug or nuisance.
 If any shortcomings, make clear what these are and where they are located.
->> There are none that we are aware of at this moment.
+>> There are none that we are aware of at this moment, besides not opening it on anything other than normal dimensions (computer screen, not phones)
 
 ## Link or full list of requirements
 Link to Google Slides Presentation: https://docs.google.com/presentation/d/1aiEgo5xbXQiLILuRMVf0TWpPrAiiHqLwest9Ahanm-U/edit#slide=id.p 
