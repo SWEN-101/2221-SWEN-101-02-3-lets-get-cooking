@@ -19,6 +19,8 @@
             </div>
           </div>
           <img src="../imgs/hamburger.png" height="5%" width="2.5%" class="hamburger"></img>
+          <img src="../imgs/back.png" height="5%" width="2.5%" class="back-button" onclick="history.go(-1)"></img>
+
         </div>
         <div class="clip-wrapper-menu">
           <div class="menu">
@@ -47,13 +49,29 @@
       </div>
       <!-- END OF NAVBAR -->  
     </br>
-        <h1>Search</h1>
-        <form id="form">
-            <input type="search" id="query" name="q" placeholder="Search for recipes...">
-        </form>
-        <a href="./search-results.html">
-            <button>Search</button>
-        </a>
+      <div class="flex-center">
+        <div class="rgba-feed">
+          <div class="flex-center">
+            <h1>Search for a recipe</h1>
+          </div>
+        </div>
+      </div>
+    </br>
+      <div class="flex-center">
+        <div class="rgba-feed">
+        </br>
+          <div class="flex-center">
+            <form id="form">
+              <input type="search" id="query" name="q" placeholder="Search for recipes...">
+            </form>
+            <a href="./search-results.html">
+                <button>Search</button>
+            </a>
+          </div>
+        </br>
+        </div>
+      </div>
+
       <script type="text/javascript" src="../js/hamburger.js"></script>  
     </body>
 </html>
